@@ -1,6 +1,6 @@
 package Ejercicios;
 
-public class Kata {
+public class CountPositivesSumNegatives {
 
     /* Devuelve una matriz, donde el primer elemento es el recuento de
     números positivos y el segundo elemento es una suma de números negativos.
