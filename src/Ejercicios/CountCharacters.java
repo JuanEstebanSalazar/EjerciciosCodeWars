@@ -1,5 +1,6 @@
 package Ejercicios;
 
+import java.util.Arrays;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -21,6 +22,7 @@ public class CountCharacters {
            5) El Function.identity() nos sirvio como criterio de agrupación que en este caso
            es si por medio del caracter (si hay un caracter repetido agrúpalo).
          */
+
         return str.chars().mapToObj(c -> (char) c).
                 collect(Collectors.groupingBy(Function.identity(),Collectors.
                         collectingAndThen(Collectors.counting(),Long::intValue)));
